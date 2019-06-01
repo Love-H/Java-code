@@ -1,7 +1,7 @@
 package com.geekH;
 
 /***
- * ²âÊÔÊı×éµÄ¿½±´
+ * æµ‹è¯•æ•°ç»„çš„æ‹·è´
  * @author geekH3334
  *
  */
@@ -18,7 +18,7 @@ public class TestArraycopy {
 	}
 	
 	public static void testBasicCopy() {
-		//²âÊÔ°ÑÊı×éÖĞµÄÔªËØ¸´ÖÆµ½ĞÂµÄÊı×éµ±ÖĞ
+		//æµ‹è¯•æŠŠæ•°ç»„ä¸­çš„å…ƒç´ å¤åˆ¶åˆ°æ–°çš„æ•°ç»„å½“ä¸­
 		String[] s1 = {"aa", "bb", "cc", "dd", "ee"};
 	    String[] s2 = new String[10];
 	    
@@ -30,8 +30,8 @@ public class TestArraycopy {
 	}
 	
 	public static void testBasicCopy2() {
-		//²âÊÔ°ÑÊı×éÖĞµÄÄ³Ò»ÔªËØÉ¾³ı
-		String[] s1 = {"aa", "bb", "cc", "dd", "ee"};
+	    //æµ‹è¯•æŠŠæ•°ç»„ä¸­çš„æŸä¸€å…ƒç´ åˆ é™¤
+	    String[] s1 = {"aa", "bb", "cc", "dd", "ee"};
 	    String[] s2 = new String[10];
 	    
 	    System.arraycopy(s1, 3, s1, 2, s1.length-3);
@@ -60,7 +60,7 @@ public class TestArraycopy {
 	}
 	
 	public static String[] extendRange (String[] s) {
-		// À©ÈİÊı×é
+		// æ‰©å®¹æ•°ç»„
 		String[] s1 = new String[s.length + 10];
 		
 		System.arraycopy(s, 0, s1, 0, s.length);
