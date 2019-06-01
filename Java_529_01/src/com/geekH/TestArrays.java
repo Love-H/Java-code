@@ -3,7 +3,10 @@ package com.geekH;
 import java.util.Arrays;
 
 /***
- * ²âÊÔ java.util.Arrays¹¤¾ßÀàµÄÊ¹ÓÃ
+ * æµ‹è¯• java.util.Arrayså·¥å…·ç±»çš„ä½¿ç”¨
+ * 1. æ‰“å° 
+ * 2. æ’åº
+ * 3. æŸ¥æ‰¾
  * @author geekH3334
  *
  */
@@ -21,28 +24,28 @@ public class TestArrays {
 	}
 	
 	public static void printArray(int[] a) {
-		// ´òÓ¡Êı×é
-		System.out.println(a); // ´òÓ¡Êı×éÒıÓÃµÄÖµ
-		System.out.println(Arrays.toString(a)); // ´òÓ¡Êı×éÔªËØµÄÖµ		
+		// æ‰“å°æ•°ç»„
+		System.out.println(a); // æ‰“å°æ•°ç»„å¼•ç”¨çš„å€¼
+		System.out.println(Arrays.toString(a)); // æ‰“å°æ•°ç»„å…ƒç´ çš„å€¼		
 	}
 	
 	public static void printArray1(int[] a) {
-		// ´òÓ¡ÅÅĞòºóµÄÊı×é
+		// æ‰“å°æ’åºåçš„æ•°ç»„
 		System.out.println(Arrays.toString(a));
-		Arrays.sort(a); // Êı×éÔªËØµÄÅÅĞò
+		Arrays.sort(a); // æ•°ç»„å…ƒç´ çš„æ’åº
 		System.out.println(Arrays.toString(a));
 	}
 	
 	public static void printArray2(int[] a) {
-		// ²éÕÒÊı×éÖĞµÄÄ³Ò»ÔªËØ
+		// æŸ¥æ‰¾æ•°ç»„ä¸­çš„æŸä¸€å…ƒç´ 
 		System.out.println(Arrays.toString(a));
-		Arrays.sort(a); // Ê¹ÓÃ¶ş·Ö²éÕÒ·¨,±ØĞëÏÈ¶ÔÊı×é½øĞĞÅÅĞò
+		Arrays.sort(a); // ä½¿ç”¨äºŒåˆ†æŸ¥æ‰¾æ³•,å¿…é¡»å…ˆå¯¹æ•°ç»„è¿›è¡Œæ’åº
 		System.out.println(Arrays.toString(a));
-		System.out.println("¸ÃÔªËØµÄË÷Òı£º" + Arrays.binarySearch(a, 11));
+		System.out.println("è¯¥å…ƒç´ çš„ç´¢å¼•ï¼š" + Arrays.binarySearch(a, 11));
 	}
 	
 	public static void printArray3(int[] a) {
-		// Ìæ»»Êı×éÖĞµÄÔªËØ
+		// æ›¿æ¢æ•°ç»„ä¸­çš„å…ƒç´ 
 		System.out.println(Arrays.toString(a));
 		
 		Arrays.fill(a, 2, 4, 100);
