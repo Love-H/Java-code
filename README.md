@@ -5,7 +5,7 @@ public class Demo01WhileSum {
 		while(num != 0) {
 			sum = sum + num;
 			num++;
-// sqy
+// 
 		}
 	}
 }
